@@ -78,6 +78,23 @@ npm run build
 npm run serve
 ```
 
+## Package as Standalone
+
+```bat
+:: Make Standalone Version using nexe (assume installed globally)
+npm i nexe -g
+nexe src/server/index.js
+:: Copy and create complete distribution files; 'F' means file, 'D' means Copy as folder for xcopy
+mkdir package
+xcopy OSJS.exe package\OSJS.exe
+F
+xcopy dist package\dist /s /e
+D
+xcopy vfs package\vfs /s /e
+D
+```
+
+
 ## Contribution
 
 * **Sponsor on [Github](https://github.com/sponsors/andersevenrud)**
