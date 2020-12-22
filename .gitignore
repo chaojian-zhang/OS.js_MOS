@@ -5,3 +5,7 @@ node_modules
 /sessions
 /.env*
 /session-store.db
+
+# Windows Distribution Generated Files
+OSJS.exe
+/package*
